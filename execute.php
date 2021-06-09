@@ -48,7 +48,10 @@
 		//i parametri sono cosa voglio mandare indietro al mio utente
 		$parameters = array('chat_id' => $chatId, "text" => $text);
 		
-		
+		if($text=="ciao"){
+			$text = "Benvenuto sulla pagina del bot dell'8 marzo";
+			$parameters = array('chat_id' => $chatId, "text" => $text);
+		}
 		
 		
 		//aggiungo il comando di invio
